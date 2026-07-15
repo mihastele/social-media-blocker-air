@@ -9,6 +9,11 @@ export default defineConfig({
       input: {
         popup: 'src/popup.html',
         background: 'background.js'
+      },
+      output: {
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name].js',
+        assetFileNames: '[name].[ext]'
       }
     }
   }

@@ -5,7 +5,7 @@
   "main": "background.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "build": "vite build && cp -r dist/src/* dist/ && rm -rf dist/src && cp manifest.json rules.json dist/"
   },
   "keywords": [],
   "author": "",
