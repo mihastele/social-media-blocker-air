@@ -19,4 +19,5 @@
 .history
 .DS_Store
 Thumbs.db
+key.pem
 desktop/src-tauri/key.pem
