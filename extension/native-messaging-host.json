@@ -1,0 +1,9 @@
+{
+  "name": "com.social.media.blocker",
+  "description": "Native messaging host for Social Media Blocker",
+  "path": "/home/miha/dev/social-media-blocker-air/desktop/src-tauri/target/debug/native-messaging-host",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://dummy-id-for-now/"
+  ]
+}

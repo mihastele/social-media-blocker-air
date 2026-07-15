@@ -1,0 +1,22 @@
+# dependencies
+**/node_modules
+
+# rust/tauri
+**/target
+**/src-tauri/target
+**/src-tauri/gen
+
+# build artifacts
+**/dist
+**/build
+
+# logs
+*.log
+
+# ide/system
+.vscode
+.idea
+.history
+.DS_Store
+Thumbs.db
+desktop/src-tauri/key.pem

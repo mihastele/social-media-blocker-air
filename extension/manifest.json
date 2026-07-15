@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Social Media Blocker",
+  "version": "1.0",
+  "description": "Block distracting websites.",
+  "permissions": ["declarativeNetRequest", "nativeMessaging"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlHKqtR53U6ydvlZCK/Abc2JuKdC2jIqCaH2ewVqDhZfEgJ+nsHkb6yvm2Ufo+je/kR3relUCwzR3Gbm6/8g375TYBqUI9yw9cR37FmYHxLHhlCi5wYw7NhiqerotjOo77VynbKr0A/u6TVsM2yjaDG/2TXLRC2EMFxD6f5w5ilzZxs2TIudKPKQ2qYd7wRX2ieY8ofuL7t1+0GUsjVrB2yNrNbCtKrt9+M8ai0wi/36giRZu9VDREeYNuQVdWJbtchpRUokWJQ/VGbPBTzvIMekQseG4EXrgGp2hE00TM7q/GvG6/5wkH2H0FYRpk5dWbC0V432Fae/Z9aOTV2qwvwIDAQAB"
+}
