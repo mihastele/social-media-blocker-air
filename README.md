@@ -25,3 +25,23 @@ To ensure your extension has a consistent ID across development, you need to use
      "key": "YOUR_BASE64_PUBLIC_KEY_HERE"
    }
    ```
+
+   ## Building and Loading the Extension
+
+   The browser extension works identically across Windows, Linux, and macOS.
+
+   ### 1. Build the Extension
+   Navigate to the `extension` directory and build the production files:
+   ```bash
+   cd extension
+   npm install
+   npm run build
+   ```
+   This will generate the built files in the `extension/dist` directory.
+
+   ### 2. Load the Extension in Browser
+   1. Open your browser's extensions management page (e.g., `chrome://extensions/` in Chrome/Edge, `about:debugging` in Firefox).
+   2. Enable "Developer mode".
+   3. Click "Load unpacked" and select the `extension` directory (or the `extension/dist` directory depending on your browser's requirements).
+
+   *Note: The native messaging functionality requires the Tauri desktop application to be running and correctly registered on your OS.*
