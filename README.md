@@ -42,6 +42,8 @@ To ensure your extension has a consistent ID across development, you need to use
    ### 2. Load the Extension in Browser
    1. Open your browser's extensions management page (e.g., `chrome://extensions/` in Chrome/Edge, `about:debugging` in Firefox).
    2. Enable "Developer mode".
-   3. Click "Load unpacked" and select the `extension` directory (or the `extension/dist` directory depending on your browser's requirements).
+   3. **Crucial:** Click "Load unpacked" and select the **`extension/dist`** directory (not the `extension` or `extension/src` directories).
+
+   *Note: Ensure you copy `manifest.json` to the `dist` directory if it is not automatically copied, and make sure the paths in that manifest correctly point to the files now located in `dist`.*
 
    *Note: The native messaging functionality requires the Tauri desktop application to be running and correctly registered on your OS.*
